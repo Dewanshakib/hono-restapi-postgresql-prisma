@@ -8,6 +8,20 @@ This project is perfect as a **lightweight, high-performance backend foundation*
 
 ---
 
+## 💡 Why Hono Instead of Express?
+
+I chose **Hono** because it’s:
+
+* 🚀 **Much faster** — built on Web Standards (Fetch API) and optimized for speed
+* 📦 **Lightweight** — tiny footprint with only the essentials
+* 🛠️ **Modern & TypeScript-first** — no need for extra typings like in Express
+* 🌍 **Cross-platform** — runs on Node.js, Bun, Deno, Cloudflare Workers, Vercel Edge, etc.
+* 🧩 **Built-in helpers** — JWT, cookies, validation, CORS without installing dozens of middlewares
+
+Simply put: **Hono gives Express-like simplicity but with cutting-edge performance** — perfect for modern backends.
+
+---
+
 ## 🚀 Tech Stack
 
 * ⚡ **Hono** (ultra-fast web framework)
