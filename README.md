@@ -94,7 +94,7 @@ src/
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git](https://github.com/Dewanshakib/hono-restapi-postgresql-prisma
+git clone https://github.com/Dewanshakib/hono-restapi-postgresql-prisma
 cd your-repo-name
 ```
 
