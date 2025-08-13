@@ -70,7 +70,6 @@ src/
 ├── middlewares/     # Auth & error handlers
 ├── prisma/          # Prisma client
 ├── utils/           # Helper functions
-├── types/           # TypeScript types
 └── index.ts         # App entry point
 ```
 
@@ -81,7 +80,7 @@ src/
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/your-username/your-repo-name.git](https://github.com/Dewanshakib/hono-restapi-postgresql-prisma
 cd your-repo-name
 ```
 
@@ -96,7 +95,6 @@ pnpm install
 ```env
 DATABASE_URL="postgresql://username:password@localhost:5432/dbname"
 JWT_SECRET="yourSuperSecret"
-PORT="5000" 
 ```
 
 ### 4️⃣ Initialize Prisma & run migrations
@@ -130,7 +128,7 @@ pnpm dev
 
 | Method | Endpoint                | Description               |
 | ------ | ----------------------- | ------------------------- |
-| GET    | `/api/posts/all`        | Get all posts (protected) |
+| GET    | `/api/posts`        | Get all posts (protected) |
 | POST   | `/api/posts/create`     | Create a new post         |
 | GET    | `/api/posts/:id`        | Get post by ID            |
 | PUT    | `/api/posts/update/:id` | Update post (owner only)  |
