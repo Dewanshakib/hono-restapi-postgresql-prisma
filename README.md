@@ -16,7 +16,7 @@ I chose **Hono** because it’s:
 * 📦 **Lightweight** — tiny footprint with only the essentials
 * 🛠️ **Modern & TypeScript-first** — no need for extra typings like in Express
 * 🌍 **Cross-platform** — runs on Node.js, Bun, Deno, Cloudflare Workers, Vercel Edge, etc.
-* 🧩 **Built-in helpers** — JWT, cookies, validation, CORS without installing dozens of middlewares
+* 🧩 **Built-in helpers** — JWT, cookies, validation, CORS, CSRF Protection without installing dozens of middlewares
 
 Simply put: **Hono gives Express-like simplicity but with cutting-edge performance** — perfect for modern backends.
 
