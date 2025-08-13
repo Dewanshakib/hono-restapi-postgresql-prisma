@@ -10,8 +10,8 @@ import { prettyJSON } from "hono/pretty-json";
 const app = new Hono();
 
 // middlewares
-// app.use(csrf());
-// app.use(cors());
+app.use(csrf());
+app.use(cors());
 app.use(prettyJSON())
 
 app.get("/", (c) => {
