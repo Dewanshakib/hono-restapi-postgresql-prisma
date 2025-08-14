@@ -25,12 +25,15 @@ app.notFound((c) => {
   return c.text("Custom 404 Message", 404);
 });
 
-serve(
-  {
-    fetch: app.fetch,
-    port: 3000,
-  },
-  (info) => {
-    console.log(`Server is running on http://localhost:${info.port}`);
-  }
-);
+//  serve(
+//   {
+//     fetch: app.fetch,
+//     port: 3000,
+//   },
+//   (info) => {
+//    console.log(`Server is running on http://localhost:${info.port}`);
+//  }
+// );
+
+export default app;
+
