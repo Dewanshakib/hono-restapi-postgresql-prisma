@@ -18,8 +18,8 @@ app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
 
-app.route("/api/users", userRouter);
-app.route("/api/posts", postRouter);
+app.route("/users", userRouter);
+app.route("/posts", postRouter);
 
 app.notFound((c) => {
   return c.text("Custom 404 Message", 404);
