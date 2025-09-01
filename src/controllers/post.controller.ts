@@ -10,19 +10,15 @@ export const createPost = async (c: Context) => {
     }
 
     const id = c.get("user").id;
-    const user = await prisma.user.findFirst({
-      where: { id },
-      select: { id: true },
-    });
-    if (!user) {
-      return c.json({ message: "Not authorized" }, 400);
+    if(!id){
+      return c.json({message:"Not authorized"},401)
     }
 
     await prisma.post.create({
       data: {
         title,
         content,
-        userId: user.id,
+        userId: id,
       },
     });
 

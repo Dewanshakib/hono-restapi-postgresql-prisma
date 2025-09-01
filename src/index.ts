@@ -12,26 +12,25 @@ const app = new Hono();
 // middlewares
 app.use(csrf());
 app.use(cors());
-app.use(prettyJSON())
+app.use(prettyJSON());
 
 app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
 
-app.route("/users", userRouter);
-app.route("/posts", postRouter);
+app.route("/api/v1/users", userRouter);
+app.route("api/v1/posts", postRouter);
 
 app.notFound((c) => {
   return c.text("Custom 404 Message", 404);
 });
 
- serve(
+serve(
   {
     fetch: app.fetch,
-    port: 3000,
+    port: 8000,
   },
   (info) => {
-   console.log(`Server is running on http://localhost:${info.port}`);
- }
+    console.log(`Server is running on http://localhost:${info.port}`);
+  }
 );
-

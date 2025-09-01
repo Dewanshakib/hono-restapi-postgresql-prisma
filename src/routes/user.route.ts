@@ -20,6 +20,6 @@ userRouter.post("/login", loginUser);
 userRouter.get("/session", session);
 
 // logout
-userRouter.post("/logout", logout);
+userRouter.get("/logout", logout);
 
 export default userRouter;

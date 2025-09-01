@@ -17,10 +17,10 @@ postRouter.use("/delete/:id", auth);
 postRouter.post("/create", createPost);
 
 // get posts
-postRouter.get("/", getPosts);
+postRouter.get("/get/all", getPosts);
 
 // single post
-postRouter.get("/:id", singlePost);
+postRouter.get("/get/:id", singlePost);
 
 // update post
 postRouter.put("/update/:id", updatePost);
