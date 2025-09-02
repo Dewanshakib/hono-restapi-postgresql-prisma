@@ -162,6 +162,6 @@ pnpm dev
 
 # 🌐 Live Demo
 
-Coming soon...
+Preview: https://hono-restapi-postgresql-prisma.onrender.com/
 
 
