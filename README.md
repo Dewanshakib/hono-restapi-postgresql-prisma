@@ -133,20 +133,20 @@ pnpm dev
 
 | Method | Endpoint        | Description            |
 | ------ | --------------- | ---------------------- |
-| POST   | `/api/register` | Register new user      |
-| POST   | `/api/login`    | Login + set JWT cookie |
-| POST   | `/api/logout`   | Logout user            |
-| GET    | `/api/session`  | Get current session    |
+| POST   | `/api/v1/users/register` | Register new user      |
+| POST   | `/api/v1/users/login`    | Login + set JWT cookie |
+| POST   | `/api/v1/users/logout`   | Logout user            |
+| GET    | `/api/v1/users/session`  | Get current session    |
 
 ### Posts
 
 | Method | Endpoint                | Description               |
 | ------ | ----------------------- | ------------------------- |
-| GET    | `/api/posts`        | Get all posts (protected) |
-| POST   | `/api/posts/create`     | Create a new post         |
-| GET    | `/api/posts/:id`        | Get post by ID            |
-| PUT    | `/api/posts/update/:id` | Update post (owner only)  |
-| DELETE | `/api/posts/delete/:id` | Delete post (owner only)  |
+| GET    | `/api/v1/posts/get/all`        | Get all posts (protected) |
+| POST   | `/api/v1/posts/create`     | Create a new post         |
+| GET    | `/api/v1/posts/get/:id`        | Get post by ID            |
+| PUT    | `/api/v1/posts/update/:id` | Update post (owner only)  |
+| DELETE | `/api/v1/posts/delete/:id` | Delete post (owner only)  |
 
 ---
 
